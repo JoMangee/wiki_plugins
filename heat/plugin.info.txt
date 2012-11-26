@@ -1,0 +1,8 @@
+base now
+author Jo Booth
+email jo.booth@intergraph.com
+date 2012-11-26
+name HEAT Plugin
+desc Highlights HEAT numbers (eg Heat #01234567) in wiki markup
+url http://www.dokuwiki.org/plugin:heat
+license CC-BY-SA http://creativecommons.org/licenses/by-sa/3.0/nz/
