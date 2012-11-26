@@ -5,7 +5,7 @@
  * Syntax: Heat #01234567 or HEAT #1234567 - will be highlighted
  * 
  * @license    CC BY-SA http://creativecommons.org/licenses/by-sa/3.0/nz/
- * @author     Jo Booth <jo.booth@intergraph.com>
+ * @author     Jo Booth <jo-heat_plugin@mesh.net.nz>
  */
 
 if(!defined('DOKU_INC')) define('DOKU_INC',realpath(dirname(__FILE__).'/../../').'/');
