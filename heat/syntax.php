@@ -8,9 +8,8 @@
  * @author     Jo Booth <jo-heat_plugin@mesh.net.nz>
  */
 
-if(!defined('DOKU_INC')) define('DOKU_INC',realpath(dirname(__FILE__).'/../../').'/');
-if(!defined('DOKU_PLUGIN')) define('DOKU_PLUGIN',DOKU_INC.'lib/plugins/');
-require_once(DOKU_PLUGIN.'syntax.php');
+// must be run within Dokuwiki
+if(!defined('DOKU_INC')) die();
 
 /**
  * All DokuWiki plugins to extend the parser/rendering mechanism
@@ -61,35 +60,6 @@ class syntax_plugin_heat extends DokuWiki_Syntax_Plugin {
         return 'substition';
     }
 	
-    /**
-     * What kind of syntax do we allow (optional)
-     */
-//    function getAllowedTypes() {
-//        return array();
-//    }
-   
-   /**
-    * Define how this plugin is handled regarding paragraphs.
-    *
-    * <p>
-    * This method is important for correct XHTML nesting. It returns
-    * one of the following values:
-    * </p>
-    * <dl>
-    * <dt>normal</dt><dd>The plugin can be used inside paragraphs.</dd>
-    * <dt>block</dt><dd>Open paragraphs need to be closed before
-    * plugin output.</dd>
-    * <dt>stack</dt><dd>Special case: Plugin wraps other paragraphs.</dd>
-    * </dl>
-    * @param none
-    * @return String <tt>'block'</tt>.
-    * @public
-    * @static
-    */
-//    function getPType(){
-//        return 'normal';
-//    }
-
    /**
     * Where to sort in?
     *
@@ -115,12 +85,8 @@ class syntax_plugin_heat extends DokuWiki_Syntax_Plugin {
       $this->Lexer->addSpecialPattern('HEAT #',$mode,'plugin_heat');
       $this->Lexer->addSpecialPattern('Heat #',$mode,'plugin_heat');
       $this->Lexer->addSpecialPattern('heat #',$mode,'plugin_heat');
-//      $this->Lexer->addEntryPattern('<TEST>',$mode,'plugin_test');
     }
 	
-//    function postConnect() {
-//      $this->Lexer->addExitPattern('</TEST>','plugin_test');
-//    }
 
 
    /**
