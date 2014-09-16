@@ -1,7 +1,7 @@
-base now
+base heat
 author Jo Booth
 email jo-heat_plugin@mesh.net.nz
-date 2012-11-26
+date 2014-09-17
 name HEAT Plugin
 desc Highlights HEAT numbers (eg Heat #01234567) in wiki markup
 url http://www.dokuwiki.org/plugin:heat
